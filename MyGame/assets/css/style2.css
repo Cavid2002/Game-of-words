@@ -1,0 +1,188 @@
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+
+*{
+    font-family: 'ArcadeClassic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-spacing: 0.5rem;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+
+body{
+    background-color: rgb(46, 43, 43);
+    animation-name: bdy;
+    animation-duration: 3s;
+}
+@keyframes bdy {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.header{
+    text-align: center;
+}
+
+header{
+    display: inline-block;
+    border: 3px solid blue;
+    text-align: center;
+    margin: 20px auto;
+    animation-name: heads;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+header h1{
+    font-size: 60px;
+    color: red;
+}
+
+header h2{
+    color: white;
+}
+
+@keyframes heads{
+    from{
+        border: 3px solid blue;
+    }
+    to{
+        border: 3px solid white;
+        background-color: blue;
+    }
+}
+
+.hangman{
+    margin: 40px 15%;
+}
+
+.head{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.body{
+    width: 5px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 20px;
+}
+
+.arm{
+    width: 5px;
+    height: 100px;
+    background-color: white;
+}
+
+.qst p{
+    font-size: 28px;
+    color: green;
+    text-align: center;
+}
+
+.qst{
+    padding: 30px 0;
+}
+
+p.tip{
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+.answer{
+    text-align: center;
+    padding: 30px 0;
+}
+.answer label{
+    font-size: 20px;
+    color: white;
+}
+
+.answer input{
+    height: 40px;
+    width: 200px;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.answer input:focus{
+    outline: 4px solid rgb(56, 177, 56);
+}
+
+p.hint{
+    color: rgb(221, 166, 95);
+}
+
+.quit{
+    text-align: center;
+}
+
+.quit a{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    background-color: #000;
+    width: 220px;
+    height: 60px;
+    font-size: 30px;
+    padding-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.quit a:hover{
+    background-color: red;
+    outline: 4px solid rgb(226, 87, 87);
+}
+
+.res{
+    font-size: 25px;
+}
+
+.sbmt{
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    background-color: orange;
+    width: 110px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.sbmt:hover{
+    background-color: green;
+    outline: 4px solid rgb(45, 174, 45);
+}
+
+.next{
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    background-color: blue;
+    width: 110px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.next:hover{
+    outline: 4px solid rgb(92, 92, 255);
+    background-color: white;
+    color: blue;
+}

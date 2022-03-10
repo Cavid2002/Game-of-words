@@ -1,0 +1,154 @@
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+
+*{
+    font-family: 'ArcadeClassic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-spacing: 0.5rem;
+}
+
+body{
+    background-color: rgb(46, 43, 43);
+    animation-name: bdy;
+    animation-duration: 3s;
+}
+@keyframes bdy {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+ul,ol{
+    list-style: none;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    font-size: 50px;
+    cursor: pointer;
+    color: blue;
+    display: inline-block;
+    animation-name: h1-for;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+header h2{
+    
+    cursor: pointer;
+    animation-name: h2-for;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes h2-for {
+    from{
+        color: white;
+    }
+    to{
+      color: red;
+    }
+}
+
+@keyframes h1-for {
+    from{
+        font-size: 50px;
+    }
+    to{
+        transform: scale(1.1,1.1);
+    }
+}
+.game-menu{
+    padding-top: 10vh;
+}
+
+.game-menu a{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+.game-menu li{
+    padding: 30px;
+    text-align: center;
+}
+
+.game-menu a:hover{
+    background-color: rgb(51, 179, 51);
+    outline: 5px solid rgb(123, 179, 123);
+}
+
+.game-menu a:active{
+    background-color: royalblue;
+}
+
+.info{
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 400px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    display: none;
+}
+
+.info h2{
+    color: green;
+    font-size: 40px;
+    padding: 20px 10px;
+}
+
+.info p{
+    padding: 10px 10px;
+}
+
+.follow{
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 400px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    display: none;
+}
+
+.follow h2{
+    font-size: 28px;
+    color: rgb(189, 241, 0);
+    padding: 20px 10px;
+}
+
+.follow p{
+    text-align: center;
+    padding: 10px;
+    word-spacing: 5rem;
+}
+
+
+i{
+    font-size: 20px;
+}
+
+i:hover{
+    color: green;
+}
+
+.active{
+    display: block;
+}
+
+
